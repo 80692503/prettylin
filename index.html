@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>照片gallery</title>
+</head>
+<body>
+<div class="full-img" id="fullImgBox">
+	<img src="./01PHOTOlin/01.jpg" id="fullImg">
+	<span onclick="closeFullImg()">X</span></div>
+<div class="img-gallery">
+	<img src="./01PHOTOlin/01.jpg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/02.jpg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/03.jpg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/04.png" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/05.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/06.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/07.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/08.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/09.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/10.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/11.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/12.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/13.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/14.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/15.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/16.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/17.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/18.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/19.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/20.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/21.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/22.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/23.jpeg" onclick="openFullImg(this.src)">
+	<img src="./01PHOTOlin/24.jpeg" onclick="openFullImg(this.src)"></div>
+<script>
+	var fullImgBox = document.getElementById("fullImgBox");
+	var fullImg = document.getElementById("fullImg");
+function openFullImg(pic){
+	fullImgBox.style.display = "flex";
+	fullImg.src = pic;
+}
+function closeFullImg(){
+	fullImgBox.style.display = "none";
+}
+</script>
+</body>
+</html>
